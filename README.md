@@ -1,6 +1,8 @@
 # ai-api
 REST API built with Node / Express
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e2d8c1b6-52d4-4863-bc6e-84917f862bb9/deploy-status)](https://app.netlify.com/sites/ai-api-clidstrom/deploys)
+
 # Getting Started
 Before you can run this project, you must have a valid API key from Open AI.
 

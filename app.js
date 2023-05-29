@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-app.use(express.json()); 
+app.use(express.json());
 
 app.post('/chat', async (req, res) => {
     const prompt = req.body.prompt;
@@ -13,7 +13,7 @@ app.post('/chat', async (req, res) => {
             max_tokens,
         }, {
             headers: {
-                'Authorization': `Bearer YOUR_OPENAI_API_KEY`,
+                'Authorization': process.env.OPENAI_API_KEY,
                 'Content-Type': 'application/json'
             }
         });
